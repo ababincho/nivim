@@ -1,5 +1,5 @@
-require('plugins')
-require('mappings')
+require("plugins")
+require("mappings")
 
 vim.opt.tabstop = 4
 vim.opt.softtabstop = 4
@@ -11,8 +11,9 @@ vim.opt.showtabline = 2
 vim.opt.laststatus = 3
 vim.opt.showmatch = true
 vim.opt.matchtime = 1
+vim.opt.number = true
 
 vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
-    pattern = { "*.fs", "*.fsx", "*.fsi" },
-    command = "set filetype=fsharp",
+	pattern = { "*.fs", "*.fsx", "*.fsi" },
+	command = "set filetype=fsharp",
 })
