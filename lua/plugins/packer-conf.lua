@@ -82,6 +82,11 @@ return require("packer").startup(function(use)
 			require("toggleterm").setup()
 		end,
 	})
+
+	use("simrat39/rust-tools.nvim")
+
+	use("mfussenegger/nvim-dap")
+	-- use("puremourning/vimspector")
 	--   -- Simple plugins can be specified as strings
 	--   use '9mm/vim-closer'
 
